@@ -1,0 +1,32 @@
+.homepage-container {
+    background-color: #41644A;
+    height: 100%;
+    /* Off white background color */
+  }
+
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card-column {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: fit-content;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+ 
+  .card {
+    height: 100%;
+  }
+  
+  .w {
+    width: 100%;
+  }

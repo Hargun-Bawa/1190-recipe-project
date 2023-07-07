@@ -1,0 +1,93 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px; /* spacing between cards */
+  }
+  .card-section {
+    max-height: 0px;
+    display: flex;
+    justify-content: center;
+    margin: 0 -10px; /* Add negative margin to create a gap */
+    visibility:hidden;
+  }
+  
+  .card-grid {
+    display: flex; /* Use flexbox for the card layout */
+    justify-content: center; /* Distribute cards evenly along the row */
+
+    gap: 20px; /* Spacing between cards */
+  }
+  
+  .desc {
+    margin-top: 25px;
+    min-height: 100px;
+    width: 88%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #E86A33;
+    border-radius: 10%;
+
+  }
+  .card img {
+
+    max-width: 100%; /* Set maximum width to ensure the image fits within the card */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+
+  .card-section {
+    display: flex;
+    justify-content: center;
+    margin:30px; /* Add negative margin to create a gap */
+  }
+  
+  .card {
+    flex: 1; /* Each card takes equal space within the flex container */
+    max-width: calc(33.33% - 20px); /* Adjust max width to compensate for spacing */
+    
+        margin: 0 10px; /* Add margin to create a gap between cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 350px; /* Adjust the width as needed */
+    height: 480px; /* Adjust the height as needed */
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #f2e3db;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  
+  .card-image {
+    width: 95%;
+    height: 0;
+    padding-bottom: 80%; /* Adjust the padding-bottom to maintain aspect ratio */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+     
+    left: 0;
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color:black;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+  }
+  

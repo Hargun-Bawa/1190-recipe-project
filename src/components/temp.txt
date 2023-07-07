@@ -1,0 +1,156 @@
+<!--
+    const tagDict = {
+      "Italian": 1,
+      "Fast Food": 1,
+      "Cheese": 1,
+      "Tomato": 1,
+      "Savory": 1,
+      "Crust": 1,
+      "Oven-baked": 1,
+      "Popular": 1,
+      "Japanese": 1,
+      "Seafood": 1,
+      "Raw": 1,
+      "Rice": 1,
+      "Healthy": 1,
+      "Soy Sauce": 1,
+      "Wasabi": 1,
+      "Artistic": 1,
+      "Asian": 1,
+      "Vegetables": 1,
+      "Sauce": 1,
+      "Wok": 1,
+      "Quick": 1,
+      "Colorful": 1,
+      "Aromatic": 1,
+      "American": 1,
+      "Beef": 1,
+      "Bun": 1,
+      "Juicy": 1,
+      "Grilled": 1,
+      "Onions": 1,
+      "All-American": 1,
+      "Comfort Food": 1,
+      "Pasta": 1,
+      "Creamy": 1,
+      "Garlic": 1,
+      "Parmesan": 1,
+      "Hearty": 1,
+      "Mexican": 1,
+      "Street Food": 1,
+      "Spicy": 1,
+      "Corn Tortilla": 1,
+      "Tangy": 1,
+      "Cilantro": 1,
+      "Lime": 1,
+      "Mexican Cuisine": 1,
+      "Fusion": 1,
+      "Wrap": 1,
+      "Fresh": 1,
+      "Avocado": 1,
+      "Crunchy": 1,
+      "Inventive": 1,
+      "Thai": 1,
+      "Noodles": 1,
+      "Peanuts": 1,
+      "Sweet": 1,
+      "Sour": 1,
+      "Authentic": 1,
+      "Middle Eastern": 1,
+      "Chicken": 1,
+      "Flatbread": 1,
+      "Marinated": 1,
+      "Tahini": 1,
+      "Garlic Sauce": 1,
+      "Tender": 1,
+      "Bowl": 1,
+      "Crispy": 1,
+      "Seaweed": 1,
+      "Satisfying": 1,
+      "Breaded": 1,
+      "Baked": 1,
+      "Delicious": 1,
+      "Vietnamese": 1,
+      "Soup": 1,
+      "Broth": 1,
+      "Vegetarian": 1,
+      "Chickpeas": 1,
+      "Fried": 1,
+      "Tahini Sauce": 1,
+      "Herbs": 1,
+      "Protein": 1,
+      "Beans": 1,
+      "Salsa": 1,
+      "Customizable": 1,
+      "Appetizer": 1,
+      "Dumplings": 1,
+      "Meat": 1,
+      "Pan-fried": 1,
+      "Dipping Sauce": 1,
+      "Umami": 1
+    };
+    const foodweights = {
+      'Pizza': 1,
+      'Sushi': 1,
+      'Stir Fry': 1,
+      'Burger': 1,
+      'Pasta': 1,
+      'Taco': 1,
+      'Sushi Burrito': 1,
+      'Pad Thai': 1,
+      'Chicken Shawarma': 1,
+      'Sushi Bowl': 1,
+      'Chicken Parmesan': 1,
+      'Pho': 1,
+      'Falafel': 1,
+      'Burrito Bowl': 1,
+      'Gyoza': 1
+    }
+          // Add more food items here
+
+    // Randomly select three food items
+    // Randomly select food items based on their weights
+    const randomFoodItems = this.selectRandomFoodItems(foodItems, foodweights, 3);
+
+    const availableFoodItems = [...foodItems]; // Create a copy of foodItems array
+    
+    while (randomFoodItems.length < 3 && availableFoodItems.length > 0) {
+      const randomIndex = Math.floor(Math.random() * availableFoodItems.length);
+      const randomFoodItem = availableFoodItems[randomIndex];
+    
+      randomFoodItems.push(randomFoodItem);
+      availableFoodItems[randomIndex] = availableFoodItems[availableFoodItems.length - 1];
+      availableFoodItems.pop();
+    }-->
+    export default foodItems;
+    <!--
+
+
+selectRandomFoodItems = (foodItems, foodweights, count) => {
+  const availableFoodItems = [...foodItems]; // Create a copy of foodItems array
+  const randomFoodItems = [];
+
+  while (randomFoodItems.length < count && availableFoodItems.length > 0) {
+    // Calculate the total weight of all available food items
+    const totalWeight = availableFoodItems.reduce((weight, food) => weight + (foodweights[food.name] || 1), 0);
+
+    // Generate a random number between 0 and the total weight
+    const randomWeight = Math.random() * totalWeight;
+
+    // Select a random food item based on its weight
+    let cumulativeWeight = 0;
+    for (const food of availableFoodItems) {
+      cumulativeWeight += foodweights[food.name] || 1;
+      if (randomWeight <= cumulativeWeight) {
+        randomFoodItems.push(food);
+        availableFoodItems.splice(availableFoodItems.indexOf(food), 1);
+        break;
+      }
+    }
+  }
+
+  return randomFoodItems;
+};
+
+  render() {
+-->

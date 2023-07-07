@@ -1,0 +1,88 @@
+.head {
+    position: fixed;
+    top:0;
+width: 100%;
+z-index: 3 ;
+background-color: #41644a;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #263A29;
+     position: fixed;
+    top:110px;
+    height: 100%;
+    width: 20%;
+    margin: 10px;
+    margin-top: 4%;
+    
+}
+table {
+    margin-left: 3% ;
+}
+ul {
+    color:#f2E3Db;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-bottom: 5%;
+    margin: 3%;
+}
+td {
+    max-width: 80%;
+    word-wrap: normal;
+    margin-top: 5%;
+    color:#f2E3Db;
+    font-size: medium;
+}
+.rec {
+    z-index: 2;
+    position: relative;
+    top: 100px;
+    left: 350px;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: auto;
+    
+}
+.holder {
+    align-self: center;
+    justify-self: center;
+    max-width: max-content;
+    max-height: max-content;
+    padding: 4%;
+    margin: 4%;
+    background-color: #f2E3Db;
+    overflow-y: scroll;
+}
+.image {
+    width: 800px;
+
+    height: 400px;
+    background-color: antiquewhite;
+    box-shadow: #263A29 9px 9px;
+
+  }
+  
+
+  
+
+.ingredient-name {
+    list-style: circle;
+    text-align: left;
+    float: left;
+  }
+  
+  .ingredient-quantity {
+    list-style:none;
+    float: left;
+    text-align: left;
+
+  }
+  h2{
+    grid-area: title;
+    color:#f2E3Db
+  }
+  .recipe-step {
+    text-align: left;
+    color: #263A29;
+  }
