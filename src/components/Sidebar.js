@@ -1,8 +1,9 @@
 import React from 'react';
 import "./Recipe.css"
 
-
+/// Sidebar takes a foodIngredients prop, to create a list of ingredients
 const Sidebar = ({ food } ) => {
+  
   return (
     <div className="sidebar">        
     <div>{food.ingredients}</div>
@@ -22,7 +23,6 @@ const Sidebar = ({ food } ) => {
             <td className='ingredient-name'>{food.ingredient}</td>
             <td></td>
             <td className= 'ingredient-quantity'>{food.quantity}</td>
-            {/* Add more table cells if needed */}
           </tr>
         ))} 
 

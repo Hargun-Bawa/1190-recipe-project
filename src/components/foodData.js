@@ -2,7 +2,7 @@
 
 
   
-
+/// a big list of potential foods and recipes
 
   const foodItems = [
 

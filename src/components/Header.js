@@ -3,6 +3,7 @@ import SignInPopup from './SignInPopup';
 import './download.png'
 
 
+/// The header object is rendered for all 3 webpages, contains the sign in functions and the logo navigation to homepage
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -13,12 +14,13 @@ class Header extends React.Component {
     };
   }
 
+  /// clickable sign in button, no functionality other than popup
   toggleSignInPopup = () => {
     this.setState((prevState) => ({
       isSignInOpen: !prevState.isSignInOpen,
     }));
   };
-
+/// doesn't work right now, the idea is to save favourites based on users.
   handleSignIn = (name) => {
     const user = this.props;
 
@@ -31,7 +33,7 @@ class Header extends React.Component {
       console.log(`Welcome, ${name}! New user created.`);
     }
   };
-
+/// see above
   handleSignOut = () => {
     this.setState({ user: null, isNewUser: true });
   };
@@ -97,10 +99,8 @@ class Header extends React.Component {
           </div>
         </div>
 
-        {/* Render the SignInPopup component if the sign-in popup is open */}
         {isSignInOpen && <SignInPopup onSignIn={this.handleSignIn} />}
 
-        {/* Render user welcome message */}
         {user && (
           <div style={{ padding: '20px', backgroundColor: '#E86A33', color: 'white' }}>
             Welcome{isNewUser ? '' : ' back'}, {user.name}!

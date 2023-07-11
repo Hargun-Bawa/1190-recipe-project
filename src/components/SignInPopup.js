@@ -1,5 +1,6 @@
 import React from 'react';
 
+/// handles the sign in function logic
 class SignInPopup extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +9,7 @@ class SignInPopup extends React.Component {
       password: '',
     };
   }
-
+/// should save the input name, not working
   handleInputChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value,

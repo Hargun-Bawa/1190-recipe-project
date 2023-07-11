@@ -1,6 +1,9 @@
 import React from 'react';
 
 
+/// Horizontal menu acts as a naviagion bar, and a filter
+/// for the rest of the webapp, currently only naviagion
+/// works
 class HorizontalMenu extends React.Component {
   constructor(props) {
     super(props);
@@ -10,6 +13,7 @@ class HorizontalMenu extends React.Component {
     };
   }
 
+  /// functions for toggling the menu's to open and close
   toggleTagMenu = () => {
     this.setState((prevState) => ({
       isTagMenuOpen: !prevState.isTagMenuOpen,
@@ -21,8 +25,10 @@ class HorizontalMenu extends React.Component {
       isCultureMenuOpen: !prevState.isCultureMenuOpen,
     }));
   };
+  
+
+/// function to navigate to the favourites page.
   favPage = () => {
-    console.log("yo");
     {this.props.setCurrentPage('favourites')};
 
   }
