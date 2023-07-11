@@ -2,7 +2,7 @@ import React from 'react';
 import "./Recipe.css"
 
 
-const Sidebar = ({ food }) => {
+const Sidebar = ({ food } ) => {
   return (
     <div className="sidebar">        
     <div>{food.ingredients}</div>

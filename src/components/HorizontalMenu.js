@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class HorizontalMenu extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,11 @@ class HorizontalMenu extends React.Component {
       isCultureMenuOpen: !prevState.isCultureMenuOpen,
     }));
   };
+  favPage = () => {
+    console.log("yo");
+    {this.props.setCurrentPage('favourites')};
 
+  }
   render() {
     const { isTagMenuOpen, isCultureMenuOpen } = this.state;
 
@@ -35,18 +40,18 @@ class HorizontalMenu extends React.Component {
       color: 'white',
       display: 'none',
     };
+    
 
     const tagDropdownStyle = isTagMenuOpen ? { ...dropdownStyle, display: 'block' } : dropdownStyle;
     const cultureDropdownStyle = isCultureMenuOpen ? { ...dropdownStyle, display: 'block' } : dropdownStyle;
 
     const dropdownContentStyle = {
       color: 'white', // Set the text color to white
-      padding: '10px',
       textDecoration: 'none',
     };
 
     return (
-      <div style={{ backgroundColor: '#263A29', color: 'white', display: 'flex' }}>
+      <div style={{ backgroundColor: '#263A29', color: 'white', display: 'flex' , border: "1px solid #f2e3db"}}>
         <div
           className="menu-item dropdown"
           style={{ flex: '1', padding: '20px', textAlign: 'center', cursor: 'pointer', position: 'relative' }}
@@ -59,6 +64,8 @@ class HorizontalMenu extends React.Component {
             <a href="#" style={dropdownContentStyle}>Tag 3</a>
           </div>
         </div>
+
+          <div style={{backgroundColor:"#f2e3db", width:'1px'}}>  </div>
         <div
           className="menu-item dropdown"
           style={{ flex: '1', padding: '20px', textAlign: 'center', cursor: 'pointer', position: 'relative' }}
@@ -72,11 +79,12 @@ class HorizontalMenu extends React.Component {
             <a href="#" style={dropdownContentStyle}>Japanese</a>
           </div>
         </div>
+          <div style={{backgroundColor:"#f2e3db", width:'1px'}}>  </div>
         <div className="menu-item" style={{ flex: '1', padding: '20px' , textAlign: 'center'}}>
 
-          <a href="https://www.google.ca" target="_blank" style={{ color: 'white' }}>
+          <div onClick={this.favPage} style={{ color: 'white' }}>
             Favorites
-          </a>
+          </div>
         </div>
       </div>
     );

@@ -15,8 +15,6 @@ constructor(props) {
     this.state = {
       currentCardIndex: 0,
   };
-
-
 }
 
 handleCardChange = (change) => {
@@ -43,7 +41,7 @@ handleNavChange = (change) => {
     return (
       <div className="homepage-container">
         <Header />
-        <HorizontalMenu />
+        <HorizontalMenu setCurrentPage= {this.props.setCurrentPage} setCurrentFood = {this.props.setCurrentFood}/>
       
         
         <div className="card-container">

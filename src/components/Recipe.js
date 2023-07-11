@@ -13,10 +13,10 @@ class Recipe extends React.Component {
             <div className='head'>
 
             <Header className= 'h'></Header>
-            <HorizontalMenu className= 'h'></HorizontalMenu>
+            <HorizontalMenu className= 'h' setCurrentFood = {this.props.setCurrentFood} setCurrentPage= {this.props.setCurrentPage}></HorizontalMenu>
             </div>
             <div className='recipe'>
-            <Sidebar className = 'sidebar' food={ foodItems[this.props.currentFood].ingredients} />
+            <Sidebar className = 'sidebar' food={ foodItems[this.props.currentFood].ingredients}  />
             <div className='rec'>
                 <div className='holder'>
                     <div className='image'>
@@ -33,6 +33,8 @@ class Recipe extends React.Component {
                     ))}
 
                     </div>
+                </div>
+                <div>
                 </div>
 
             </div>

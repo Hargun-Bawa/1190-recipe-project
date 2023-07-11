@@ -49,9 +49,9 @@ class Header extends React.Component {
             alignItems: 'center',
             backgroundColor: '#263A29',
             color: 'white',
-            marginBottom: '5px',
           }}
         >
+          <div className='barrier' style={{backgroundColor:'#f2e3db', width:'1px' }} ></div>
           <div style = {{flex: '5 1 auto ',  display: 'block', float:'left', paddingLeft:' 15px'}}>
 
             {!user ? (
@@ -65,6 +65,7 @@ class Header extends React.Component {
                   padding: '10px 20px' ,
                   cursor: 'pointer',
                   alignContent: 'left',
+                  margin: '2px'
                 }}
                 onClick={this.toggleSignInPopup}
               >
@@ -80,6 +81,7 @@ class Header extends React.Component {
                   borderTopRightRadius: '20px',
                   borderBottomRightRadius: '20px',
                   cursor: 'pointer',
+                  margin: '2px'
                 }}
               >
                 {user.name}, Sign Out

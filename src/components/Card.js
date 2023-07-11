@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Card.css";
 
-
 const Card = ({ name, image, number,  description, handleCardChange , handleNavChange}) => {
   const handlePrevCard = () => {
     handleCardChange(-1);
@@ -16,18 +15,21 @@ const Card = ({ name, image, number,  description, handleCardChange , handleNavC
     
   };
     
-      
   return (
     <div className="card">
       <h3>{name}</h3>
       <div className="card-image">
         <img src={require(`./images/${image}`)} alt={name} />
-      </div>
+
+      </div >
+      <div className='box'>
       <p className="desc">{description}</p>
+      </div>
       <div className="card-buttons">
-        <button className="card-button" onClick={handlePrevCard}>←</button>
-        <button className="card-button" onClick={handleNextCard}>→</button>
-        <button className="card-button" onClick= {handleNavigation}>↑</button>
+        <img src={require("./images/dislike.png")} className="card-button" onClick={handlePrevCard} width={"25px"} height={"25px"}></img>
+
+        <img src={require("./images/tick.png")} className="card-button" onClick={handleNavigation} width={"25px"} height={"25px"}></img>
+        <img src={require("./images/like.png")} className="card-button" onClick={handleNextCard} width={"25px"} height={"25px"}></img>
       </div>
     </div>
   );
