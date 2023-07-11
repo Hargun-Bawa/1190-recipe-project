@@ -1,3 +1,6 @@
+This is a little webapp to help narrow down what to eat used as a project for one of my courses
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
