@@ -1,0 +1,14 @@
+.popup-inner {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5%;
+}
+
+h3 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+button {
+    margin-left: 2%;
+}

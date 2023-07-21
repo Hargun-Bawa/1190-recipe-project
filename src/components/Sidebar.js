@@ -2,12 +2,12 @@ import React from 'react';
 import "./Recipe.css"
 
 /// Sidebar takes a foodIngredients prop, to create a list of ingredients
-const Sidebar = ({ food } ) => {
-  
+const Sidebar = ({ food }) => {
+
   return (
-    <div className="sidebar">        
-    <div>{food.ingredients}</div>
-    <h2>Ingredients</h2>
+    <div className="sidebar">
+      <div>{food.ingredients}</div>
+      <h2>Ingredients</h2>
       <table>
         <thead>
           <tr>
@@ -17,14 +17,14 @@ const Sidebar = ({ food } ) => {
 
         </thead>
         <tbody>
-        {food.map((food, index) => (
+          {food.map((food, index) => (
 
-          <tr key={index}>
-            <td className='ingredient-name'>{food.ingredient}</td>
-            <td></td>
-            <td className= 'ingredient-quantity'>{food.quantity}</td>
-          </tr>
-        ))} 
+            <tr key={index}>
+              <td className='ingredient-name'>{food.ingredient}</td>
+              <td></td>
+              <td className='ingredient-quantity'>{food.quantity}</td>
+            </tr>
+          ))}
 
         </tbody>
       </table>

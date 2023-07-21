@@ -1,120 +1,81 @@
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    gap: 20px; /* spacing between cards */
-  }
-  .card-section {
-    max-height: 0px;
-    display: flex;
-    justify-content: center;
-    margin: 0 -10px; /* Add negative margin to create a gap */
-    visibility:hidden;
-  }
-  
-  .card-grid {
-    display: flex; /* Use flexbox for the card layout */
-    justify-content: center; /* Distribute cards evenly along the row */
+.box {
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  min-height: 100px;
+  width: 88%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #E86A33;
+  border-radius: 10%;
+  text-justify: distribute;
+}
 
-    gap: 20px; /* Spacing between cards */
-  }
+.desc {
+  text-align: center;
+  justify-content: center;
+}
 
-  .box {
-    justify-content: center;
-       margin-top: 25px;
-       margin-bottom: 15px;
-    min-height: 100px;
-    width: 88%;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #E86A33;
-    border-radius: 10%;
-    text-justify:distribute;
-  }
-  
-  .desc {
-    text-align: center;
-    justify-content: center;
- 
-  
+.card {
+  flex: 1;
+  max-width: calc(33.33% - 20px);
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 350px;
+  height: fit-content;
+  border: 0x solid #000;
+  border-radius: 4px;
+  background-color: #41644a;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+}
 
-  }
-  .card img {
+.card-image {
+  width: 95%;
+  height: 0;
+  padding-bottom: 80%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 4px solid #f2e3db;
+}
 
-    max-width: 100%; /* Set maximum width to ensure the image fits within the card */
-    height: auto; /* Allow the height to adjust proportionally */
-  }
-
-  .card-section {
-    display: flex;
-    justify-content: center;
-    margin:30px; /* Add negative margin to create a gap */
-  }
-  
-  .card {
-    flex: 1; /* Each card takes equal space within the flex container */
-    max-width: calc(33.33% - 20px); /* Adjust max width to compensate for spacing */
-    
-        margin: 0 10px; /* Add margin to create a gap between cards */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; 
-    width: 350px; /* Adjust the width as needed */
-    height: fit-content; /* Adjust the height as needed */
-    border: 0x solid #000;
-    border-radius: 4px;
-    background-color: #41644a;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 10px;
-  }
-  
-  .card-image {
-    width: 95%;
-    height: 0;
-    padding-bottom: 80%; /* Adjust the padding-bottom to maintain aspect ratio */
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    border: 4px solid #f2e3db;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-     
-    left: 0;
-  }
-  
-  .card-content {
-    text-align: center;
-    justify-content: center;
-  }
-  
-  h3{
-    margin-top: 5px;
-    margin-bottom: 10px ;
-
-    font-size:x-large;
-  }
-  .card-content h3 {
-    color:black;
-  }
-  
-  .card-content p {
-    font-size: 44px;
-  }
-  
-.card-buttons{
+.card-image img {
+  max-width: 100%;
+  height: auto;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+}
 
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: x-large;
+}
+
+.card-content h3 {
+  color: black;
+}
+
+.card-content p {
+  font-size: 44px;
+}
+
+.card-buttons {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.card-button{
-  
+
+.card-button {
   display: flex;
 }

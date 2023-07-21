@@ -1,0 +1,45 @@
+.frame {
+    overflow-anchor: auto;
+    display: flex;
+    overflow-anchor: auto;
+    display: flex;
+    overflow-anchor: auto;
+    align-items: center;
+    background-color: #263A29;
+    color: white;
+}
+
+.b1 {
+    float: left;
+    flex: 1 1 auto;
+    background-color: #E86A33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-content: left;
+    margin: 2px;
+}
+
+.barrier {
+    background-color: #f2e3db;
+    width: 1px;
+}
+
+.sign_in {
+    flex: 5 1 auto;
+    display: block;
+    float: left;
+    padding-left: 15px;
+}
+
+.logobox {
+    flex: 6 1 auto;
+    display: block;
+}
+
+.logo {
+    float: left;
+    height: 75px;
+    margin: 0;
+}

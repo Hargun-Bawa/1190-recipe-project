@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./SignInPopup.css";
 /// handles the sign in function logic
 class SignInPopup extends React.Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class SignInPopup extends React.Component {
       password: '',
     };
   }
-/// should save the input name, not working
+  /// should save the input name, not working
   handleInputChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value,
@@ -17,7 +17,7 @@ class SignInPopup extends React.Component {
   };
 
   handleSignIn = () => {
-      
+
   };
 
   render() {
@@ -32,8 +32,8 @@ class SignInPopup extends React.Component {
             value={this.state.username}
             onChange={this.handleInputChange}
           />
-       
-        
+
+
           <button onClick={this.handleSignIn}>Sign In</button>
         </div>
       </div>

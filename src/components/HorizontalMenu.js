@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 /// Horizontal menu acts as a naviagion bar, and a filter
 /// for the rest of the webapp, currently only naviagion
 /// works
@@ -25,11 +26,11 @@ class HorizontalMenu extends React.Component {
       isCultureMenuOpen: !prevState.isCultureMenuOpen,
     }));
   };
-  
 
-/// function to navigate to the favourites page.
+
+  /// function to navigate to the favourites page.
   favPage = () => {
-    {this.props.setCurrentPage('favourites')};
+    this.props.setCurrentPage('favourites');
 
   }
   render() {
@@ -43,10 +44,10 @@ class HorizontalMenu extends React.Component {
       minWidth: '160px',
       boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)',
       zIndex: '1',
-      color: 'white',
+      color: 'yellow',
       display: 'none',
     };
-    
+
 
     const tagDropdownStyle = isTagMenuOpen ? { ...dropdownStyle, display: 'block' } : dropdownStyle;
     const cultureDropdownStyle = isCultureMenuOpen ? { ...dropdownStyle, display: 'block' } : dropdownStyle;
@@ -57,7 +58,7 @@ class HorizontalMenu extends React.Component {
     };
 
     return (
-      <div style={{ backgroundColor: '#263A29', color: 'white', display: 'flex' , border: "1px solid #f2e3db"}}>
+      <div style={{ backgroundColor: '#263A29', color: '', display: 'flex', border: "1px solid #f2e3db" }}>
         <div
           className="menu-item dropdown"
           style={{ flex: '1', padding: '20px', textAlign: 'center', cursor: 'pointer', position: 'relative' }}
@@ -65,13 +66,13 @@ class HorizontalMenu extends React.Component {
         >
           <span>Tags</span>
           <div className="dropdown-content" style={tagDropdownStyle}>
-            <a href="#" style={dropdownContentStyle}>Tag 1</a>
-            <a href="#" style={dropdownContentStyle}>Tag 2</a>
-            <a href="#" style={dropdownContentStyle}>Tag 3</a>
+            <div style={dropdownContentStyle}>Tag 1</div>
+            <div style={dropdownContentStyle}>Tag 2</div>
+            <div style={dropdownContentStyle}>Tag 3</div>
           </div>
         </div>
 
-          <div style={{backgroundColor:"#f2e3db", width:'1px'}}>  </div>
+        <div style={{ backgroundColor: "#f2e3db", width: '1px' }}>  </div>
         <div
           className="menu-item dropdown"
           style={{ flex: '1', padding: '20px', textAlign: 'center', cursor: 'pointer', position: 'relative' }}
@@ -79,15 +80,14 @@ class HorizontalMenu extends React.Component {
         >
           <span>Cultures</span>
           <div className="dropdown-content" style={cultureDropdownStyle}>
-            <a href="#" style={dropdownContentStyle}>Italian</a>
-            <a href="#" style={dropdownContentStyle}>Mexican</a>
-            <a href="#" style={dropdownContentStyle}>Indian</a>
-            <a href="#" style={dropdownContentStyle}>Japanese</a>
+            <div style={dropdownContentStyle}>Italian</div>
+            <div style={dropdownContentStyle}>Mexican</div>
+            <div style={dropdownContentStyle}>Indian</div>
+            <div style={dropdownContentStyle}>Japanese</div>
           </div>
         </div>
-          <div style={{backgroundColor:"#f2e3db", width:'1px'}}>  </div>
-        <div className="menu-item" style={{ flex: '1', padding: '20px' , textAlign: 'center'}}>
-
+        <div style={{ backgroundColor: "#f2e3db", width: '1px' }}>  </div>
+        <div className="menu-item" style={{ flex: '1', padding: '20px', textAlign: 'center' }}>
           <div onClick={this.favPage} style={{ color: 'white' }}>
             Favorites
           </div>
