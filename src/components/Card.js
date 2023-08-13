@@ -35,9 +35,9 @@ const Card = ({ name, image, number, description, handleCardChange, handleNavCha
       </div>
 
       <div className="card-buttons">
-        <img src={require("./images/dislike.png")} className="card-button" onClick={handlePrevCard} width={"25px"} height={"25px"} alt='thumbs-down'></img>
-        <img src={require("./images/tick.png")} className="card-button" onClick={handleNavigation} width={"25px"} height={"25px"} alt='choose'></img>
-        <img src={require("./images/like.png")} className="card-button" onClick={handleNextCard} width={"25px"} height={"25px"} alt='thumbs-up'></img>
+      <img src={require("./images/dislike.png")} className="card-button" onClick={handlePrevCard} width={"45px"} height={"45px"} alt='thumbs-down'></img>
+        <img src={require("./images/tick.png")} className="card-button" onClick={handleNavigation} width={"45px"} height={"45px"} alt='choose'></img>
+        <img src={require("./images/like.png")} className="card-button" onClick={handleNextCard} width={"45px"} height={"45px"} alt='thumbs-up'></img>
       </div>
     </div>
   );

@@ -46,6 +46,8 @@ class HorizontalMenu extends React.Component {
       zIndex: '1',
       color: 'yellow',
       display: 'none',
+      textAlign: 'left',
+      padding:'5px',
     };
 
 
@@ -58,7 +60,7 @@ class HorizontalMenu extends React.Component {
     };
 
     return (
-      <div style={{ backgroundColor: '#263A29', color: '', display: 'flex', border: "1px solid #f2e3db" }}>
+      <div style={{ backgroundColor: '#263A29', fontSize: '21px', color: 'white', display: 'flex', border: "1px solid #f2e3db", textAlign:"left"}}>
         <div
           className="menu-item dropdown"
           style={{ flex: '1', padding: '20px', textAlign: 'center', cursor: 'pointer', position: 'relative' }}

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Recipe.css"
+import "./Sidebar.css"
 
 /// Sidebar takes a foodIngredients prop, to create a list of ingredients
 const Sidebar = ({ food }) => {
@@ -20,7 +21,7 @@ const Sidebar = ({ food }) => {
           {food.map((food, index) => (
 
             <tr key={index}>
-              <td className='ingredient-name'>{food.ingredient}</td>
+              <td fontSize = '35px' className='ingredient-name'>{food.ingredient}</td>
               <td></td>
               <td className='ingredient-quantity'>{food.quantity}</td>
             </tr>

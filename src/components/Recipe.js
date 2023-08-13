@@ -36,6 +36,9 @@ class Recipe extends React.Component {
                                 ))}
 
                             </div>
+                            <div>
+                                <button onClick={foodItems[this.props.currentFood].set}>favourites</button>
+                            </div>
                         </div>
                         <div>
                         </div>

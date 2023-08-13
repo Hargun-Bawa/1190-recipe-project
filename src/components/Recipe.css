@@ -22,12 +22,16 @@ table {
   margin-left: 3%;
 }
 
+
 ul {
   color: #f2E3Db;
   margin-top: 5%;
   margin-bottom: 5%;
   margin-bottom: 5%;
   margin: 3%;
+  
+  list-style-type: style disc;;
+
 }
 
 td {
@@ -80,10 +84,17 @@ td {
 
 h2 {
   grid-area: title;
-  color: #f2E3Db
+  color: #f2E3Db;
+  font-size: small;
+
 }
 
 .recipe-step {
   text-align: left;
   color: #263A29;
+  font-size: 25px;
+}
+button {
+  display: flex;
+  flex-direction: row;
 }

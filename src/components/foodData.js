@@ -19,6 +19,10 @@ const foodItems = [
       { ingredient: 'Wasabi', quantity: 'For dipping' }
     ],
     index: 0,
+    set : function() {
+      foodItems[0].active = !foodItems[0].active;
+      console.log(foodItems[0].active)
+    },
   },
 
   {
@@ -37,7 +41,11 @@ const foodItems = [
       { ingredient: 'Spices and seasonings', quantity: 'To taste' },
       { ingredient: 'Rice or noodles', quantity: 'As desired' }
     ],
-    index: 1,
+    index: 1   , set : function() {
+      foodItems[1].active = !foodItems[1].active;
+      console.log(foodItems[0].active)
+   
+    },
   },
 
   {
@@ -57,8 +65,12 @@ const foodItems = [
       { ingredient: 'Fries', quantity: 'For serving' }
     ],
     index: 2,
-  },
 
+    set:function() {
+      foodItems[2].active = !foodItems[2].active;
+      console.log(foodItems[2].active)
+  },
+  },
   {
     name: 'Pasta',
     image: 'pasta.jpg',
@@ -74,7 +86,12 @@ const foodItems = [
       { ingredient: 'Cheese (e.g., Parmesan, mozzarella)', quantity: 'As desired' },
       { ingredient: 'Herbs and seasonings', quantity: 'To taste' }
     ],
-    index: 3,
+    index: 3 ,
+    set : function() {
+      foodItems[3].active = !foodItems[3].active;
+      console.log(foodItems[3].active)
+    },
+
   },
 
   {
@@ -93,7 +110,10 @@ const foodItems = [
       { ingredient: 'Guacamole', quantity: 'For serving' },
       { ingredient: 'Seasonings and spices', quantity: 'To taste' }
     ],
-    index: 4,
+    index: 4,   set : function() {
+      foodItems[4].active = !foodItems[4].active;
+      console.log(foodItems[4].active)
+    },
   },
 
   // Generate objects for the remaining food items
@@ -114,7 +134,11 @@ const foodItems = [
       { ingredient: 'Wasabi', quantity: 'For dipping' },
       { ingredient: 'Large tortilla', quantity: '1' }
     ],
-    index: 5,
+index: 5,
+set : function() {
+  foodItems[5].active = !foodItems[5].active;
+  console.log(foodItems[5].active)
+},
   },
 
   {
@@ -139,7 +163,11 @@ const foodItems = [
       { ingredient: 'Tamarind paste', quantity: '1 tablespoon' },
       { ingredient: 'Cooking oil', quantity: '2 tablespoons' }
     ],
-    index: 6,
+    index: 6, 
+    set : function() {
+      foodItems[6].active = !foodItems[6].active;
+      console.log(foodItems[6].active)
+    },
   },
 
   {
@@ -168,8 +196,11 @@ const foodItems = [
       { ingredient: 'Cucumbers', quantity: 'For serving' },
       { ingredient: 'Onions', quantity: 'For serving' }
     ],
-    index: 7,
-  },
+    index: 7, 
+    set : function() {
+      foodItems[7].active = !foodItems[7].active;
+      console.log(foodItems[7].active)
+    },},
 
   {
     name: 'Sushi Bowl',
@@ -188,7 +219,11 @@ const foodItems = [
       { ingredient: 'Soy sauce', quantity: 'For serving' },
       { ingredient: 'Wasabi', quantity: 'For serving' }
     ],
-    index: 8,
+    index: 8, 
+    set : function() {
+      foodItems[8].active = !foodItems[8].active;
+      console.log(foodItems[8].active)
+    },
   },
 
   {
@@ -211,7 +246,10 @@ const foodItems = [
       { ingredient: 'Cooked pasta or bread', quantity: 'For serving' }
     ],
     index: 9,
-  },
+    set : function() {
+      foodItems[9].active = !foodItems[9].active;
+      console.log(foodItems[9].active)
+    },},
 
   {
     name: 'Pho',
@@ -234,7 +272,10 @@ const foodItems = [
       { ingredient: 'Hoisin sauce', quantity: 'For serving' },
       { ingredient: 'Sriracha', quantity: 'For serving' }
     ],
-    index: 10,
+    index: 10,   set : function() {
+      foodItems[10].active = !foodItems[10].active;
+      console.log(foodItems[10].active)
+    },
   },
 
   {
@@ -261,7 +302,11 @@ const foodItems = [
       { ingredient: 'Tahini sauce', quantity: 'For serving' },
       { ingredient: 'Toppings (e.g., lettuce, tomatoes, cucumbers)', quantity: 'As desired' }
     ],
-    index: 11,
+    index: 11,   set : function() {
+      foodItems[11].active = !foodItems[11].active;
+      console.log(foodItems[11].active)
+    },
+    
   },
 
   {
@@ -283,7 +328,10 @@ const foodItems = [
       { ingredient: 'Sour cream', quantity: 'For serving' },
       { ingredient: 'Tortilla chips', quantity: 'For serving' }
     ],
-    index: 12,
+    index: 12,    set : function() {
+      foodItems[12].active = !foodItems[12].active;
+      console.log(foodItems[12].active)
+    },
   },
 
   {
@@ -308,7 +356,10 @@ const foodItems = [
       { ingredient: 'Water', quantity: 'For cooking' },
       { ingredient: 'Dipping sauce (e.g., soy sauce, vinegar)', quantity: 'For serving' }
     ],
-    index: 13,
+    index: 13 ,   set : function() {
+      foodItems[13].active = !foodItems[ 13].active;
+      console.log(foodItems[13].active)
+    },
   },
 
   {
@@ -328,7 +379,10 @@ const foodItems = [
       { ingredient: 'Salt', quantity: '1/2 teaspoon' },
       { ingredient: 'Italian herbs (e.g., oregano, basil)', quantity: '1 teaspoon' }
     ],
-    index: 14,
+    index: 14,   set : function() {
+      foodItems[14].active = !foodItems[14].active;
+      console.log(foodItems[14].active)
+    },
   },
 ]
 

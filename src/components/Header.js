@@ -48,7 +48,7 @@ class Header extends React.Component {
           <div className='barrier' ></div>
           <div className='sign_in'>
             {!user ? (
-              <button className = "b1" onClick={this.toggleSignInPopup}>
+              <button fontSize = '45px' className = "b1" onClick={this.toggleSignInPopup}>
                 Sign In
               </button>
             ) : (
